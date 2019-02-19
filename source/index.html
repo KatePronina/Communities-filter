@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Communities filter</title>
+	<link rel="stylesheet" href="assets/css/app.css">
+	<script src="https://vk.com/js/api/openapi.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="filter">
+			<div class="filter__forms forms">
+				<input type="text" class="forms__input" id="started" placeholder="Начните вводить название сообщества">
+				<input type="text" class="forms__input" id="selected" placeholder="Начните вводить название сообщества">
+			</div>
+			<div class="filter__lists lists">
+				<div class="lists__your-communities">
+					<b class="lists__name">Ваши сообщества</b>
+					<ul class="lists__ul lists__ul-started">
+					</ul>
+				</div>
+				<div class="lists__selected">
+					<b class="lists__name">Выбранные сообщества</b>
+					<ul class="lists__ul lists__ul-selected">
+					</ul>
+				</div>
+			</div>
+			<div class="filter__save">
+				<button class="filter__save-button">Сохранить</button>
+			</div>
+		</div>
+	</div>
+
+
+	<template>
+		<li class="lists__elem" draggable="true">
+			<img class="lists__elem-img">
+			<b class="lists__elem-title"></b>
+			<button class="lists__elem-del"></button>
+		</li>
+	</template>
+
+	<script src="js/app.js"></script>
+</body>
+
+
+</html>
